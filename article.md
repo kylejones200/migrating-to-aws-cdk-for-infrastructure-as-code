@@ -15,24 +15,24 @@ Migrating to the AWS CDK allows developers to manage cloud resources using popul
 ### Moving from CloudFormation to CDK
 Migrating from AWS CloudFormation to CDK is a natural progression for teams looking to leverage the power of programming languages to define their infrastructure. Since CDK is built on top of CloudFormation, it generates CloudFormation templates under the hood, which ensures compatibility with existing AWS infrastructure and services. However, moving from static CloudFormation templates to the dynamic flexibility of CDK requires some planning and restructuring.
 
-[**Infrastructure as Code with CloudFormation on AWS**\ *Introduction to AWS CloudFormation*medium.com](https://medium.com/@kylejones_47003/infrastructure-as-code-with-cloudformation-on-aws-1a5b2323b96a "https://medium.com/@kylejones_47003/infrastructure-as-code-with-cloudformation-on-aws-1a5b2323b96a")[](https://medium.com/@kylejones_47003/infrastructure-as-code-with-cloudformation-on-aws-1a5b2323b96a)
-#### **Why Migrate from CloudFormation to CDK?**
+[Infrastructure as Code with CloudFormation on AWS — Introduction to AWS CloudFormation](https://medium.com/@kylejones_47003/infrastructure-as-code-with-cloudformation-on-aws-1a5b2323b96a "https://medium.com/@kylejones_47003/infrastructure-as-code-with-cloudformation-on-aws-1a5b2323b96a")[](https://medium.com/@kylejones_47003/infrastructure-as-code-with-cloudformation-on-aws-1a5b2323b96a)
+#### Why Migrate from CloudFormation to CDK?
 CloudFormation is a robust tool, but it has limitations. Writing complex CloudFormation templates can become tedious, especially as applications scale and grow more sophisticated. CDK provides several key advantages over traditional CloudFormation:
 
-**Programming constructs:** With CDK, you can use loops, conditionals, functions, and variables to create modular and reusable infrastructure. This is particularly helpful for large projects with multiple environments or stacks.
+Programming constructs: With CDK, you can use loops, conditionals, functions, and variables to create modular and reusable infrastructure. This is particularly helpful for large projects with multiple environments or stacks.
 
-**Improved readability:** CloudFormation templates can become large and difficult to read, especially with deeply nested resources. CDK simplifies this by abstracting many details and providing concise, human-readable code.
+Improved readability: CloudFormation templates can become large and difficult to read, especially with deeply nested resources. CDK simplifies this by abstracting many details and providing concise, human-readable code.
 
-**Code reuse:** With CDK, you can create reusable constructs for common patterns, which reduces redundancy and simplifies infrastructure management.
+Code reuse: With CDK, you can create reusable constructs for common patterns, which reduces redundancy and simplifies infrastructure management.
 
-#### **Key Differences in Moving to CDK**
+#### Key Differences in Moving to CDK
 While CloudFormation and CDK ultimately both use AWS CloudFormation under the hood to provision resources, there are significant differences
 
-**Declarative vs. Imperative**: CloudFormation is declarative, meaning you define the end state of your infrastructure, and AWS figures out how to achieve it. CDK is imperative, allowing you to describe infrastructure programmatically with logic, loops, and conditions.
+Declarative vs. Imperative: CloudFormation is declarative, meaning you define the end state of your infrastructure, and AWS figures out how to achieve it. CDK is imperative, allowing you to describe infrastructure programmatically with logic, loops, and conditions.
 
-**Maintainability:** In CDK, you can organize your infrastructure code into classes and functions, making it easier to maintain and update over time. This is a significant improvement over the flat structure of CloudFormation templates.
+Maintainability: In CDK, you can organize your infrastructure code into classes and functions, making it easier to maintain and update over time. This is a significant improvement over the flat structure of CloudFormation templates.
 
-**Testing:** CDK code can be tested like any other codebase. Using common testing libraries, you can write unit tests for infrastructure, which is not quickly done with raw CloudFormation templates.
+Testing: CDK code can be tested like any other codebase. Using common testing libraries, you can write unit tests for infrastructure, which is not quickly done with raw CloudFormation templates.
 
 ### Step-by-Step Migration Process
 Migrating from CloudFormation to CDK involves re-writing CloudFormation templates into CDK code. Still, it's not as daunting as it sounds because of the high overlap between AWS resources in both systems.
