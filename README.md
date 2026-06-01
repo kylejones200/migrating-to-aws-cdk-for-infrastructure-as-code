@@ -11,14 +11,7 @@ Migrating from AWS CloudFormation to CDK is a natural progression for teams look
 
 CloudFormation is a robust tool, but it has limitations. Writing complex CloudFormation templates can become tedious, especially as applications scale and grow more sophisticated. CDK provides several key advantages over traditional CloudFormation:
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
